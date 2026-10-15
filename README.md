@@ -80,3 +80,24 @@ Análise de um áudio longo, janela a janela. O script gera uma timeline com tem
 ## 🏗️ Do Colab para o show ao vivo
 
 Em produção, o mesmo pipeline recebe áudio contínuo:
+Stream RTMP → FFmpeg (subprocess/pipe, PCM 16 kHz mono) → Queue → Thread YAMNet (inferência + smoothing + regras) → WebSockets → Dashboards
+
+
+---
+
+## 📚 Stack
+
+`Python 3` · `TensorFlow Hub` · `YAMNet` · `librosa` · `NumPy` · `Pandas` · `Matplotlib` · `Google Colab`
+
+---
+
+## 👋 Sobre
+
+**Plugh** — Conectamos ideias à tecnologia. Viabilizamos projetos especiais para marcas que precisam transformar ideias em algo funcional, do problema à execução.
+
+**Pedro Santos** — Software Engineer · Plugh
+- LinkedIn: [linkedin.com/in/mtdomingues](https://www.linkedin.com/in/mtdomingues/)
+- Instagram: [@pedro_domingues05](https://www.instagram.com/pedro_domingues05/)
+- E-mail: pedromanoel0509@gmail.com
+
+*Tecnologia, método e proximidade para fazer funcionar.*
